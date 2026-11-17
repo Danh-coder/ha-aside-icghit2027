@@ -4,6 +4,10 @@
 Phan Cong Danh and Wooguil Pak  
 School of Computer Science and Engineering, Yeungnam University
 
+Hierarchical Architectural Separation of Instructions and Data (HA-ASIDE) extends
+Architecturally Separated Instruction–Data Embeddings (ASIDE) with role-conditioned
+embedding rotation.
+
 This repository provides the source, exact data selections, training recipe,
 inference implementation, and recorded generated tokens used by the six-page
 manuscript in [`paper/main.pdf`](paper/main.pdf). The paper evaluates a

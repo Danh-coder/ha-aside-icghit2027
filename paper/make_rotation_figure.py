@@ -1,95 +1,80 @@
-"""Illustrate source pages, coordinate pairs, rotation geometry, and model flow."""
+"""Draw the per-token role/embedding dataflow as a vector schematic."""
 from pathlib import Path
-import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
-from matplotlib.patches import Rectangle, Polygon, FancyArrowPatch, Circle, Arc
+from matplotlib.patches import Rectangle,Polygon,FancyArrowPatch,FancyBboxPatch,Circle
 
 HERE=Path(__file__).resolve().parent
-COLORS={'policy':'#526471','request':'#237b9a','document':'#c67932'}
-
+COLORS={'S':'#526471','U':'#237b9a','D':'#c67932'}
 
 def main():
+    font_dir=Path('C:/Windows/Fonts')
     for name in ['times.ttf','timesbd.ttf','timesi.ttf','timesbi.ttf']:
-        font_path=Path('C:/Windows/Fonts')/name
-        if font_path.exists():font_manager.fontManager.addfont(str(font_path))
-    plt.rcParams.update({'font.family':('Times New Roman' if Path('C:/Windows/Fonts/times.ttf').exists() else 'DejaVu Serif'),'font.size':8,
-                         'pdf.fonttype':42,'ps.fonttype':42})
-    fig=plt.figure(figsize=(7.14,2.85))
-    ax=fig.add_axes([.01,.01,.98,.98])
+        if (font_dir/name).exists():font_manager.fontManager.addfont(str(font_dir/name))
+    family='Times New Roman' if (font_dir/'times.ttf').exists() else 'DejaVu Serif'
+    plt.rcParams.update({'font.family':family,'font.size':8,'pdf.fonttype':42,'ps.fonttype':42})
+    fig=plt.figure(figsize=(7.14,2.05));ax=fig.add_axes([0,0,1,1])
     ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off')
-
-    def arrow(p,q,color='#35434c',width=.8):
-        ax.add_patch(FancyArrowPatch(p,q,arrowstyle='->',mutation_scale=9,
-                                    linewidth=width,color=color))
-
-    for y,key,label in [(.74,'policy','Application policy'),
-                         (.49,'request','User request'),
-                         (.24,'document','External document')]:
-        color=COLORS[key]
-        x=.025;w=.12;h=.15;fold=.022
-        ax.add_patch(Polygon([(x,y),(x+w,y),(x+w,y+h-fold),
-                              (x+w-fold,y+h),(x,y+h)],closed=True,
-                             facecolor='white',edgecolor=color,linewidth=1))
-        ax.plot([x+w-fold,x+w-fold,x+w],[y+h,y+h-fold,y+h-fold],color=color,lw=.7)
-        for ly,length in [(y+.105,.066),(y+.077,.080),(y+.049,.056)]:
-            ax.plot([x+.017,x+.017+length],[ly,ly],color=color,lw=.75)
-        ax.text(x+w/2,y-.055,label,ha='center',va='top',fontsize=8)
-        arrow((x+w+.008,y+.075),(.225,y+.075),color)
-        # Two rows depict successive coordinate pairs in a token embedding.
-        for k in range(4):
-            for j in range(2):
-                ax.add_patch(Rectangle((.23+k*.027,y+.018+j*.048),.022,.039,
-                             edgecolor=color,facecolor=color,alpha=.20+.14*j,lw=.6))
-        for k in range(4):
-            xx=.23+k*.027
-            ax.plot([xx,xx,xx+.022,xx+.022],[y+.122,y+.133,y+.133,y+.122],
-                    color=color,lw=.6)
-    ax.text(.282,.955,'Token embedding',ha='center',fontsize=8)
-    ax.text(.282,.115,'Adjacent coordinate pairs',ha='center',fontsize=8)
-    arrow((.355,.56),(.407,.56))
-
-    # A separate equal-aspect axis ensures that the visual angles are accurate.
-    geo=fig.add_axes([.414,.24,.235,.61])
-    geo.set(xlim=(-.25,1.35),ylim=(-1.22,.48),aspect='equal');geo.axis('off')
-    geo.annotate('',xy=(1.27,0),xytext=(-.16,0),
-                 arrowprops={'arrowstyle':'->','linewidth':.6,'color':'#a4a9ad'})
-    geo.annotate('',xy=(0,.40),xytext=(0,-1.14),
-                 arrowprops={'arrowstyle':'->','linewidth':.6,'color':'#a4a9ad'})
-    geo.add_patch(Arc((0,0),1.28,1.28,theta1=-90,theta2=0,
-                      color='#b3b8bb',lw=.7,linestyle=':'))
-    for theta,key in [(0,'policy'),(np.pi/8,'request'),(np.pi/2,'document')]:
-        end=(np.cos(theta),-np.sin(theta))
-        geo.annotate('',xy=end,xytext=(0,0),
-                     arrowprops={'arrowstyle':'->','linewidth':1.6,'color':COLORS[key]})
-    geo.text(.87,.14,'Policy: 0',color=COLORS['policy'],ha='center',fontsize=8)
-    geo.text(.72,-.62,'Request: π/8',color=COLORS['request'],ha='center',fontsize=8)
-    geo.text(.18,-1.15,'Document: π/2',color=COLORS['document'],ha='left',fontsize=8)
-    ax.text(.535,.955,'Same vector, role-selected angle',ha='center',fontsize=8)
-    ax.text(.535,.115,'Repeat for every coordinate pair',ha='center',fontsize=8)
-    arrow((.655,.56),(.70,.56))
-
-    # Shared neural layers: all role-conditioned vectors use one model.
-    for x in [.735,.79,.845]:
-        for y in [.34,.49,.64,.79]:
-            ax.add_patch(Circle((x,y),.014,edgecolor='#526471',facecolor='#edf1f3',lw=.8))
-    for x1,x2 in [(.735,.79),(.79,.845)]:
-        for y1 in [.34,.49,.64,.79]:
-            for y2 in [.34,.49,.64,.79]:
-                ax.plot([x1+.014,x2-.014],[y1,y2],color='#c0c8cd',lw=.35,zorder=-1)
-    ax.text(.79,.955,'Shared Transformer',ha='center',fontsize=8)
-    ax.text(.79,.115,'Existing model parameters',ha='center',fontsize=8)
-    arrow((.873,.56),(.92,.56))
-    ax.add_patch(Polygon([(.928,.36),(.989,.36),(.989,.73),(.975,.76),(.928,.76)],
-                         closed=True,edgecolor='#526471',facecolor='white',lw=.8))
-    for y in [.67,.61,.55,.49,.43]:
-        ax.plot([.938,.98],[y,y],color='#526471',lw=.6)
-    ax.text(.958,.24,'Response',ha='center',fontsize=8)
-    for ext in ['pdf','png','svg']:
-        fig.savefig(HERE/'figures'/('overall_architecture.'+ext),dpi=240)
+    def text(x,y,s,**kw):return ax.text(x,y,s,fontsize=8,**kw)
+    def arrow(a,b,color='#4a5965',dashed=False):
+        ax.add_patch(FancyArrowPatch(a,b,arrowstyle='->',mutation_scale=8,
+                     linewidth=.8,color=color,linestyle='--' if dashed else '-'))
+    def document(x,y,color,w=.036,h=.105):
+        fold=.011
+        ax.add_patch(Polygon([(x,y),(x+w,y),(x+w,y+h-fold),(x+w-fold,y+h),(x,y+h)],
+                            closed=True,facecolor='white',edgecolor=color,lw=.9))
+        ax.plot([x+w-fold,x+w-fold,x+w],[y+h,y+h-fold,y+h-fold],lw=.6,color=color)
+        for yy in [y+.075,y+.052,y+.029]:ax.plot([x+.006,x+w-.006],[yy,yy],lw=.6,color=color)
+    for x,label in [(.09,'Input sources'),(.272,'Token sequence'),(.424,'Shared lookup E'),
+                    (.62,'Pairwise rotation'),(.864,'Shared Transformer')]:
+        text(x,.955,label,ha='center',va='top')
+    ax.add_patch(FancyBboxPatch((.211,.20),.119,.64,boxstyle='round,pad=0.006',
+                 facecolor='none',edgecolor='#aab5bd',lw=.6))
+    for center,role,label in [(.755,'S','Application policy'),(.515,'U','User request'),(.275,'D','External document')]:
+        c=COLORS[role];document(.012,center-.046,c)
+        text(.056,center+.025,label,ha='left',va='center')
+        text(.056,center-.04,{'S':'SYSTEM','U':'USER','D':'DATA'}[role],color=c,ha='left',va='center')
+        arrow((.173,center),(.216,center),c)
+        ax.add_patch(Rectangle((.218,center-.05),.055,.10,facecolor=c,alpha=.13,edgecolor=c,lw=.6))
+        ax.add_patch(Rectangle((.283,center-.05),.040,.10,facecolor='white',edgecolor=c,lw=.6))
+        text(.2455,center,'token',ha='center',va='center')
+        text(.303,center,role,color=c,ha='center',va='center')
+    text(.2455,.15,'tokens',ha='center');text(.303,.15,'roles',ha='center')
+    ax.plot([.33,.345,.345,.51],[.84,.84,.865,.865],color='#526471',lw=.7,ls='--')
+    arrow((.51,.865),(.61,.865),dashed=True)
+    text(.43,.79,'source label rᵢ',ha='center',va='center')
+    text(.62,.79,'select angle θ',ha='center',va='center')
+    arrow((.33,.515),(.382,.515))
+    for row in range(5):
+        for col in range(4):
+            ax.add_patch(Rectangle((.387+col*.018,.36+row*.057),.017,.052,
+                         facecolor='#c5d8e0' if row==2 else '#edf0f2',edgecolor='#8d9aa3',lw=.45))
+    text(.424,.27,'embedding eᵢ',ha='center')
+    arrow((.465,.515),(.505,.515))
+    ax.add_patch(FancyBboxPatch((.51,.22),.222,.52,boxstyle='round,pad=0.008',
+                 facecolor='#f6f8f9',edgecolor='#8d9aa3',lw=.65))
+    for y,role,label in [(.65,'S','S: 0'),(.48,'U','U: π/8'),(.31,'D','D: π/2')]:
+        c=COLORS[role]
+        for x in [.522,.544,.680,.702]:
+            ax.add_patch(Rectangle((x,y-.033),.017,.066,facecolor=c,alpha=.28,edgecolor=c,lw=.6))
+        arrow((.567,y),(.672,y),c)
+        text(.62,y+.042,label,color=c,ha='center',va='bottom')
+    text(.62,.145,'Same angle for all coordinate pairs',ha='center')
+    text(.62,.075,'Clockwise; no added trainable parameters',ha='center')
+    arrow((.74,.515),(.786,.515))
+    ax.add_patch(FancyBboxPatch((.793,.275),.150,.56,boxstyle='round,pad=0.007',
+                 facecolor='white',edgecolor='#526471',lw=.8))
+    for k in [2,1,0]:
+        ax.add_patch(FancyBboxPatch((.806+.009*k,.48+.05*k),.111,.145,
+                     boxstyle='round,pad=0.004',facecolor='#e5edf1',edgecolor='#526471',lw=.7))
+    text(.861,.55,'Decoder layers',ha='center',va='center')
+    text(.868,.32,'Fine-tuned',ha='center',va='center')
+    arrow((.865,.26),(.865,.135))
+    document(.847,.016,'#526471',w=.036,h=.105)
+    text(.895,.067,'Response',ha='left',va='center')
+    for ext in ['pdf','png','svg']:fig.savefig(HERE/'figures'/('overall_architecture.'+ext),dpi=260)
     plt.close(fig)
-
 
 if __name__=='__main__':main()

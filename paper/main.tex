@@ -10,28 +10,32 @@ pdfsubject={A feasibility study of role-conditioned embedding rotation},
 pdfkeywords={ASIDE, instruction-data separation, prompt injection, AI agents}}
 
 \title{HA-ASIDE: Role-Conditioned Embedding Rotation\\for Instruction--Data Separation}
-\author{\IEEEauthorblockN{Phan Cong Danh, Wooguil Pak}
-\IEEEauthorblockA{School of Computer Science and Engineering\\
-Yeungnam University\\
-Gyeongsan 38541, Republic of Korea\\
-danhcongphan@yu.ac.kr, wooguilpak@yu.ac.kr}}
+\author{\IEEEauthorblockN{\normalsize 1\textsuperscript{st} Phan Cong Danh\textsuperscript{*},
+2\textsuperscript{nd} Wooguil Pak\textsuperscript{\dag}}
+\IEEEauthorblockA{\textit{\textsuperscript{*} School of Computer Science and Engineering, Yeungnam University, Gyeongsan 38541, Republic of Korea}\\
+\textit{\textsuperscript{\dag} School of Computer Science and Engineering, Yeungnam University, Gyeongsan 38541, Republic of Korea}\\
+Emails: \textit{danhcongphan@yu.ac.kr, wooguilpak@yu.ac.kr}}}
 
 \begin{document}
 \bstctlcite{IEEEcontrol}
 \maketitle
 
 \begin{abstract}
-LLM-based AI agents process application policies, user requests, and external
+Large language model (LLM)-based artificial intelligence (AI) agents process
+application policies, user requests, and external
 documents in a shared context. Prompt injection exploits confusion over the
-authority of these sources, motivating built-in source separation. ASIDE
-distinguishes instructions from data through embedding rotation but places
+authority of these sources, motivating built-in source separation.
+Architecturally Separated Instruction--Data Embeddings (ASIDE) distinguishes instructions from data through embedding rotation but places
 application policies and user requests in the same instruction frame. We
-propose HA-ASIDE, which introduces a fixed intermediate rotation for user
+propose Hierarchical Architectural Separation of Instructions and Data
+(HA-ASIDE), which introduces a fixed intermediate rotation for user
 requests while retaining ASIDE's policy and data transformations. This
 extension distinguishes the three sources at the token-embedding layer. We
 assess feasibility in a single-turn study using controlled separation tests
-constructed from SEP and MTRAG, alongside clean-task utility tests derived
-from IHEval and BIPIA. Paired separation requires an answer word to appear
+constructed from the instruction--data separation (SEP) dataset and Multi-Turn
+Retrieval-Augmented Generation (MTRAG) benchmark, alongside clean-task utility
+tests derived from Instruction Hierarchy Evaluation (IHEval) and the Benchmark
+for Indirect Prompt Injection Attacks (BIPIA). Paired separation requires an answer word to appear
 when an additional question is asked by the user and to be absent when the
 same question appears in a document. HA-ASIDE meets this criterion in 55.5
 percent of 200 paired contexts, compared with 21.0 percent for ASIDE. Changing
@@ -71,7 +75,8 @@ do not reliably resolve instruction--data ambiguity~\cite{zverev2025sep}. This
 motivates a built-in source signal conveyed through each token's
 representation, alongside natural-language instructions.
 
-ASIDE represents the instruction--data distinction architecturally by rotating
+Architecturally Separated Instruction--Data Embeddings (ASIDE) represents the
+instruction--data distinction architecturally by rotating
 data-token embeddings~\cite{zverev2026aside}. This binary representation
 provides a useful foundation, but places application policies and user
 requests in the same instruction frame. These components have distinct
@@ -79,7 +84,8 @@ responsibilities in an LLM-based AI agent: the user selects a goal, while
 application policy constrains how it is pursued. A role-conditioned extension
 can represent this distinction explicitly at the embedding layer.
 
-We propose HA-ASIDE, which assigns source labels before inference and applies
+We propose Hierarchical Architectural Separation of Instructions and Data
+(HA-ASIDE), which assigns source labels before inference and applies
 a fixed rotation determined by each token's role. The method introduces an
 intermediate rotation for user requests, retains ASIDE's data rotation, and
 leaves the application-policy frame unchanged. It preserves the existing
@@ -102,8 +108,9 @@ Recent surveys trace the development of prompt injection from goal hijacking
 and prompt leakage in instruction-following applications to attacks delivered
 through retrieved content~\cite{deng2025agents}. Direct attacks manipulate
 user requests, whereas indirect attacks embed instructions in external
-material processed for a legitimate task. BIPIA systematically evaluates the
-latter threat~\cite{yi2025bipia}. Current defenses include StruQ, which
+material processed for a legitimate task. The Benchmark for Indirect Prompt
+Injection Attacks (BIPIA) systematically evaluates the
+latter threat~\cite{yi2025bipia}. Current defenses include structured queries (StruQ), which
 combines a trusted query format with fine-tuning~\cite{chen2025struq}.
 Meanwhile, adaptive evaluations show that performance against fixed attacks
 can overstate robustness~\cite{nasr2026attacker}.
@@ -124,7 +131,8 @@ participants~\cite{yu2025trustagent}, while AgentDojo evaluates task
 completion and attacks in an executable agent
 environment~\cite{debenedetti2024agentdojo}.
 
-One current defense approach enforces security outside the model. CaMeL
+One current defense approach enforces security outside the model.
+Capabilities for Machine Learning (CaMeL)
 separates control and data flows and applies capability-based policies to tool
 calls~\cite{debenedetti2026camel}. Its threat model trusts the user query and
 explicitly excludes text-only answer corruption that does not violate a
@@ -134,8 +142,8 @@ investigated alongside runtime enforcement without replacing its security
 policies.
 
 \subsection{Role-Aware Embedding Representations}
-ISE learns additive vectors for multiple instruction
-segments~\cite{wu2025ise}. ASIDE instead applies a fixed orthogonal rotation
+Instructional Segment Embedding (ISE) learns additive vectors for multiple
+instruction segments~\cite{wu2025ise}. ASIDE instead applies a fixed orthogonal rotation
 to data embeddings while leaving instruction embeddings
 unchanged~\cite{zverev2026aside}. Its isoclinic construction applies the same
 quarter-turn to each adjacent coordinate pair, preserving vector length
@@ -230,11 +238,11 @@ parameters.
 
 \begin{figure*}[t]
 \centering\includegraphics[width=\textwidth]{figures/overall_architecture.pdf}
-\caption{Role-conditioned embedding rotation. Each source component selects one of
-three fixed angles. Adjacent coordinate pairs are rotated before entering the
-shared Transformer. The coordinate-plane illustration shows the same vector
-under the three encodings; the transformation is applied throughout the
-embedding.}
+\caption{HA-ASIDE architecture. Application-owned source labels accompany the
+token sequence. A shared embedding lookup supplies each token vector, while
+its source label selects the clockwise rotation applied to every adjacent
+coordinate pair. The transformed embeddings enter one shared, fine-tuned
+Transformer. Colors indicate source provenance.}
 \label{fig:architecture}
 \end{figure*}
 
@@ -244,14 +252,16 @@ during fine-tuning.
 
 \section{Experimental Setup}
 \subsection{Models and Training}
-We compare Vanilla, ASIDE, ISE-2, and HA-ASIDE within the Qwen2.5-7B model
+We compare Vanilla, ASIDE, the two-segment ISE baseline (ISE-2), and HA-ASIDE
+within the Qwen2.5-7B model
 family, using a common Qwen2.5-7B-Instruct tokenizer. Training corpora differ
 across methods; results compare the evaluated configurations. HA-ASIDE is
-fine-tuned on ChatQA \texttt{synthetic\_convqa}
-conversations~\cite{liu2024chatqa}, comprising 32,046 training and 3,552
+fine-tuned on ChatQA \texttt{synthetic\_convqa} conversational question
+answering (QA) data~\cite{liu2024chatqa}, comprising 32,046 training and 3,552
 validation examples. The split is determined by connected groups of documents
-and first questions. Training uses sequences of up to 2,048 tokens, AdamW with
-zero weight decay, a cosine learning-rate schedule starting at $10^{-6}$, no
+and first questions. Training uses sequences of up to 2,048 tokens and the
+Adaptive Moment Estimation with decoupled weight decay (AdamW) optimizer,
+configured with zero weight decay, a cosine learning-rate schedule starting at $10^{-6}$, no
 warmup, an effective batch size of 64, three epochs, and seed 42.
 
 Training minimizes the standard full-sequence next-token loss
@@ -277,8 +287,8 @@ boundary rule excludes continuations beyond the intended answer. Complete
 generated outputs are retained for sensitivity analysis.
 
 \subsection{Separation Benchmark and Metrics}
-We combine SEP probe questions~\cite{zverev2025sep} with fixed reference
-exchanges from MTRAG~\cite{katsis2025mtrag}. Figure~\ref{fig:benchmark}
+We combine probe questions from the instruction--data separation (SEP) dataset~\cite{zverev2025sep} with fixed reference
+exchanges from the Multi-Turn Retrieval-Augmented Generation (MTRAG) benchmark~\cite{katsis2025mtrag}. Figure~\ref{fig:benchmark}
 illustrates the construction. Each sample retains its main task and document,
 while an additional question has an easily recognized answer word, such as
 \textit{Thames}. The evaluation follows three steps.
@@ -346,7 +356,7 @@ whether the models can use document content for legitimate tasks. The pipeline
 preserves each source task's instructions, input text, and reference answer;
 assigns the DATA role to the task-input text; generates a response; and
 compares it with the reference. No additional probe question is inserted.
-These controls are derived subsets of IHEval~\cite{zhang2025iheval} and
+These controls are derived subsets of Instruction Hierarchy Evaluation (IHEval)~\cite{zhang2025iheval} and
 BIPIA~\cite{yi2025bipia}, rather than evaluations of the complete original
 benchmarks.
 
@@ -354,8 +364,9 @@ IHEval provides language identification (240 cases), translation (250), and
 verb extraction (250). For example, a Spanish passage should produce the
 required language label, while a sentence such as ``Birds fly'' should produce
 the verb ``fly.'' Language identification is measured by accuracy, translation
-by ROUGE-L F1 (longest-common-subsequence overlap), and verb extraction by
-word F1. BIPIA provides 150 clean email/table QA cases in which the model
+by the longest-common-subsequence variant of Recall-Oriented Understudy for
+Gisting Evaluation (ROUGE-L), using F1, and verb extraction by word F1.
+F1 is the harmonic mean of precision and recall. BIPIA provides 150 clean email/table QA cases in which the model
 reads the source context and answers the user's question. These responses are
 scored using token F1 against the reference. All scores are reported on a
 0--100 scale, with higher values indicating better performance. Scores are
