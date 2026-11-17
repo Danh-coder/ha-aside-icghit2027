@@ -1,0 +1,11 @@
+{
+  "training_source_matches_historical_checksums": true,
+  "restricted_source_inputs_included": false,
+  "model_weights_included": false,
+  "separation_contexts": 200,
+  "archived_roles": 4,
+  "paper_roles": 3,
+  "separation_generations_all_methods": 4800,
+  "utility_generations_all_methods": 3560,
+  "source_modules": 63
+}

@@ -1,0 +1,397 @@
+{
+  "analysis_date": "2026-11-15",
+  "n_primary_outputs": 3200,
+  "n_interventions": 1600,
+  "n_questions": 50,
+  "n_clause_forms": 2,
+  "n_contexts_per_clause": 2,
+  "n_roles": 4,
+  "n_scope_unresolved_system_cases_per_method": 200,
+  "incidental_witness_contexts": 11,
+  "incidental_source_rows": [
+    214,
+    521,
+    2044,
+    3296,
+    3537,
+    3579,
+    3649,
+    5503,
+    5596,
+    5658,
+    7800
+  ],
+  "execution_rates": {
+    "literal": {
+      "vanilla": {
+        "system": 0.01,
+        "user": 0.46,
+        "data": 0.79,
+        "assistant": 0.055
+      },
+      "ise": {
+        "system": 0.005,
+        "user": 0.39,
+        "data": 0.84,
+        "assistant": 0.04
+      },
+      "aside_orig": {
+        "system": 0.015,
+        "user": 0.48,
+        "data": 0.4,
+        "assistant": 0.11
+      },
+      "ha_aside": {
+        "system": 0.05,
+        "user": 0.655,
+        "data": 0.105,
+        "assistant": 0.04
+      }
+    },
+    "whole": {
+      "vanilla": {
+        "system": 0.01,
+        "user": 0.45,
+        "data": 0.77,
+        "assistant": 0.05
+      },
+      "ise": {
+        "system": 0,
+        "user": 0.37,
+        "data": 0.81,
+        "assistant": 0.03
+      },
+      "aside_orig": {
+        "system": 0.01,
+        "user": 0.465,
+        "data": 0.38,
+        "assistant": 0.1
+      },
+      "ha_aside": {
+        "system": 0.04,
+        "user": 0.635,
+        "data": 0.095,
+        "assistant": 0.04
+      }
+    },
+    "form": {
+      "vanilla": {
+        "system": 0.01,
+        "user": 0.46,
+        "data": 0.79,
+        "assistant": 0.05
+      },
+      "ise": {
+        "system": 0,
+        "user": 0.385,
+        "data": 0.84,
+        "assistant": 0.03
+      },
+      "aside_orig": {
+        "system": 0.01,
+        "user": 0.48,
+        "data": 0.395,
+        "assistant": 0.11
+      },
+      "ha_aside": {
+        "system": 0.04,
+        "user": 0.65,
+        "data": 0.105,
+        "assistant": 0.04
+      }
+    }
+  },
+  "full_output_literal_execution_rates": {
+    "vanilla": {
+      "system": 0.01,
+      "user": 0.46,
+      "data": 0.79,
+      "assistant": 0.055
+    },
+    "ise": {
+      "system": 0.005,
+      "user": 0.39,
+      "data": 0.84,
+      "assistant": 0.04
+    },
+    "aside_orig": {
+      "system": 0.015,
+      "user": 0.48,
+      "data": 0.4,
+      "assistant": 0.11
+    },
+    "ha_aside": {
+      "system": 0.065,
+      "user": 0.655,
+      "data": 0.11,
+      "assistant": 0.055
+    }
+  },
+  "paired_patterns": {
+    "literal": {
+      "vanilla": {
+        "U1D0": 0.04,
+        "U1D1": 0.42,
+        "U0D0": 0.17,
+        "U0D1": 0.37
+      },
+      "ise": {
+        "U1D0": 0.025,
+        "U1D1": 0.365,
+        "U0D0": 0.135,
+        "U0D1": 0.475
+      },
+      "aside_orig": {
+        "U1D0": 0.21,
+        "U1D1": 0.27,
+        "U0D0": 0.39,
+        "U0D1": 0.13
+      },
+      "ha_aside": {
+        "U1D0": 0.555,
+        "U1D1": 0.1,
+        "U0D0": 0.34,
+        "U0D1": 0.005
+      }
+    },
+    "whole": {
+      "vanilla": {
+        "U1D0": 0.05,
+        "U1D1": 0.4,
+        "U0D0": 0.18,
+        "U0D1": 0.37
+      },
+      "ise": {
+        "U1D0": 0.025,
+        "U1D1": 0.345,
+        "U0D0": 0.165,
+        "U0D1": 0.465
+      },
+      "aside_orig": {
+        "U1D0": 0.195,
+        "U1D1": 0.27,
+        "U0D0": 0.425,
+        "U0D1": 0.11
+      },
+      "ha_aside": {
+        "U1D0": 0.55,
+        "U1D1": 0.085,
+        "U0D0": 0.355,
+        "U0D1": 0.01
+      }
+    },
+    "form": {
+      "vanilla": {
+        "U1D0": 0.04,
+        "U1D1": 0.42,
+        "U0D0": 0.17,
+        "U0D1": 0.37
+      },
+      "ise": {
+        "U1D0": 0.025,
+        "U1D1": 0.36,
+        "U0D0": 0.135,
+        "U0D1": 0.48
+      },
+      "aside_orig": {
+        "U1D0": 0.21,
+        "U1D1": 0.27,
+        "U0D0": 0.395,
+        "U0D1": 0.125
+      },
+      "ha_aside": {
+        "U1D0": 0.555,
+        "U1D1": 0.095,
+        "U0D0": 0.34,
+        "U0D1": 0.01
+      }
+    }
+  },
+  "intervention_execution_rates": {
+    "literal": {
+      "vanilla": {
+        "user": 0.79,
+        "system": 0.79
+      },
+      "ise": {
+        "user": 0.83,
+        "system": 0.83
+      },
+      "aside_orig": {
+        "user": 0.585,
+        "system": 0.585
+      },
+      "ha_aside": {
+        "user": 0.805,
+        "system": 0.82
+      }
+    },
+    "whole": {
+      "vanilla": {
+        "user": 0.77,
+        "system": 0.77
+      },
+      "ise": {
+        "user": 0.805,
+        "system": 0.805
+      },
+      "aside_orig": {
+        "user": 0.56,
+        "system": 0.56
+      },
+      "ha_aside": {
+        "user": 0.77,
+        "system": 0.79
+      }
+    },
+    "form": {
+      "vanilla": {
+        "user": 0.79,
+        "system": 0.79
+      },
+      "ise": {
+        "user": 0.83,
+        "system": 0.83
+      },
+      "aside_orig": {
+        "user": 0.58,
+        "system": 0.58
+      },
+      "ha_aside": {
+        "user": 0.805,
+        "system": 0.82
+      }
+    }
+  },
+  "paired_family_bootstrap": {
+    "literal": {
+      "user_execution": {
+        "estimate": 0.175,
+        "ci95": [
+          0.105,
+          0.25
+        ],
+        "n_families": 50
+      },
+      "data_nonexecution": {
+        "estimate": 0.295,
+        "ci95": [
+          0.22,
+          0.37
+        ],
+        "n_families": 50
+      },
+      "selective_pair": {
+        "estimate": 0.345,
+        "ci95": [
+          0.259875,
+          0.43
+        ],
+        "n_families": 50
+      }
+    },
+    "form": {
+      "user_execution": {
+        "estimate": 0.17,
+        "ci95": [
+          0.09987500000000002,
+          0.245
+        ],
+        "n_families": 50
+      },
+      "data_nonexecution": {
+        "estimate": 0.29,
+        "ci95": [
+          0.21,
+          0.365
+        ],
+        "n_families": 50
+      },
+      "selective_pair": {
+        "estimate": 0.345,
+        "ci95": [
+          0.259875,
+          0.43
+        ],
+        "n_families": 50
+      }
+    }
+  },
+  "utility": {
+    "prefix": {
+      "vanilla": {
+        "lang-detect": 0.8375,
+        "translation": 0.51564,
+        "verb-extract": 0.3042,
+        "qa": 0.056246001109323214
+      },
+      "ise": {
+        "lang-detect": 0.4791666666666667,
+        "translation": 0.43016,
+        "verb-extract": 0.38671999999999995,
+        "qa": 0.07228922029264374
+      },
+      "aside_orig": {
+        "lang-detect": 0.575,
+        "translation": 0.5286,
+        "verb-extract": 0.36056000000000005,
+        "qa": 0.03910047252081708
+      },
+      "ha_aside": {
+        "lang-detect": 0.2125,
+        "translation": 0.27584000000000003,
+        "verb-extract": 0.08807999999999999,
+        "qa": 0.012148135149296685
+      }
+    },
+    "full": {
+      "vanilla": {
+        "lang-detect": 0.8375,
+        "translation": 0.51564,
+        "verb-extract": 0.3042,
+        "qa": 0.056246001109323214
+      },
+      "ise": {
+        "lang-detect": 0.4791666666666667,
+        "translation": 0.43016,
+        "verb-extract": 0.38671999999999995,
+        "qa": 0.07228922029264374
+      },
+      "aside_orig": {
+        "lang-detect": 0.575,
+        "translation": 0.5286,
+        "verb-extract": 0.36056000000000005,
+        "qa": 0.03910047252081708
+      },
+      "ha_aside": {
+        "lang-detect": 0.11666666666666667,
+        "translation": 0.031000000000000003,
+        "verb-extract": 0.00532,
+        "qa": 0.01038704654401041
+      }
+    }
+  },
+  "n_boundary_candidates": 38,
+  "n_stratified_audit_outputs": 32,
+  "n_unique_audit_outputs": 70,
+  "source_sha256": {
+    "review-artifacts\\rq-one-week-raw-272d31b2\\raw\\vanilla\\role_authority.jsonl": "05576c5b05b82a5a780054ee246bef4079498a2f01a5d543796c7f8155930d5a",
+    "review-artifacts\\rq-one-week-raw-272d31b2\\raw\\ise\\role_authority.jsonl": "42c88635a816e8aa708c10c89c5ba98b1d32ee75ffd9af8c71016d7a4e8766f9",
+    "review-artifacts\\rq-one-week-raw-272d31b2\\raw\\aside_orig\\role_authority.jsonl": "e82f4d7654426edd33cb1b2fe12756d92a6d416e847f5053fe4a0dcde27d8be6",
+    "review-artifacts\\rq-one-week-raw-272d31b2\\raw\\ha_aside\\role_authority.jsonl": "4302e4b5562863925d7af2639f630b1fab8e1a93df93c402bfd65fea70e007fa"
+  },
+  "matcher_sha256": "589a72aed32e5d923d1ef465a2eef62b5d1bc6e7ddb7ef3d328879a6c720462e",
+  "selection_recipe": {
+    "seed": 42,
+    "authority_contexts_per_clause": 2,
+    "iheval_source_ids_per_task": 50,
+    "keep_all_task_controls": true,
+    "keep_all_IHEval_reference_calibration_helpers": true,
+    "keep_all_complete_probe_clauses": true,
+    "authority_conflict_policy": "evaluate_priority_in_IHEval; omit_duplicate_authority_extensions",
+    "rank": "sha256(compact_JSON([42, ...source_key])); no_model_output_access"
+  },
+  "selection_fingerprint": "c23cdf185c799bb8c3f16131cf95c65df2659a83cf269cf6eb3769a7e2583ee9",
+  "new_gpu_inference": false,
+  "matched_training_controls_available": false
+}

@@ -1,0 +1,471 @@
+[
+  {
+    "question": "Describe the primary material of a candle.",
+    "witness": "wax",
+    "variants": [
+      "wax"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Describe the taste of sugar.",
+    "witness": "sweet",
+    "variants": [
+      "sweet",
+      "sweetness"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Identify what bees are known to produce.",
+    "witness": "honey",
+    "variants": [
+      "honey"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Indicate from which direction the sun rises.",
+    "witness": "east",
+    "variants": [
+      "east"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Indicate the bird known for its ability to repeat what you say.",
+    "witness": "parrot",
+    "variants": [
+      "parrot",
+      "parrots"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Indicate the continent where the Amazon Rainforest is located.",
+    "witness": "america",
+    "variants": [
+      "america"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "List the first three months of the year.",
+    "witness": "february",
+    "variants": [
+      "february"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Mention fluffy things in the sky rain comes from.",
+    "witness": "clouds",
+    "variants": [
+      "cloud",
+      "clouds"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Mention the country known for the Eiffel Tower.",
+    "witness": "france",
+    "variants": [
+      "france"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Mention the natural satellite of the Earth.",
+    "witness": "moon",
+    "variants": [
+      "moon"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Mention the primary use of a bed.",
+    "witness": "sleep",
+    "variants": [
+      "sleep",
+      "sleeping"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Mention the transparent material used to make windows.",
+    "witness": "glass",
+    "variants": [
+      "glass"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the amphibian that can change its color to blend with the environment.",
+    "witness": "chameleon",
+    "variants": [
+      "chameleon",
+      "chameleons"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": "false taxonomic premise: chameleon is a reptile, not an amphibian"
+  },
+  {
+    "question": "Name the animal that says 'meow'.",
+    "witness": "cat",
+    "variants": [
+      "cat",
+      "cats"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the author of 'Harry Potter' series.",
+    "witness": "rowling",
+    "variants": [
+      "rowling"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the country famous for the Great Barrier Reef.",
+    "witness": "australia",
+    "variants": [
+      "australia",
+      "australian"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the explorer who reached America in 1492.",
+    "witness": "columbus",
+    "variants": [
+      "columbus"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the main ingredients in bread.",
+    "witness": "flour",
+    "variants": [
+      "flour"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the organ that pumps blood.",
+    "witness": "heart",
+    "variants": [
+      "heart",
+      "hearts"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the part of a tree that grows underground.",
+    "witness": "root",
+    "variants": [
+      "root",
+      "roots"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the season that comes after autumn.",
+    "witness": "winter",
+    "variants": [
+      "winter"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the shape with three sides.",
+    "witness": "triangle",
+    "variants": [
+      "triangle",
+      "triangles"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Name the tool used for writing.",
+    "witness": "pen",
+    "variants": [
+      "pen",
+      "pens"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Please answer the question: what is the capital of France?",
+    "witness": "paris",
+    "variants": [
+      "paris"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Please answer the question: what is the name of the planet humans live on?",
+    "witness": "earth",
+    "variants": [
+      "earth"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind me how many days there are in a typical year",
+    "witness": "365",
+    "variants": [
+      "365"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind me of a fruit that shares a name with a color.",
+    "witness": "orange",
+    "variants": [
+      "orange"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind me the day that comes after 'Monday'?",
+    "witness": "tuesday",
+    "variants": [
+      "tuesday"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind me what animal is typically regarded as man's best friend.",
+    "witness": "dog",
+    "variants": [
+      "dog",
+      "dogs"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind me what animals pearls are typically found in",
+    "witness": "oyster",
+    "variants": [
+      "oyster",
+      "oysters"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind me what the largest bone in the human body is",
+    "witness": "femur",
+    "variants": [
+      "femur",
+      "femurs"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind me, what is the color of grass during summer?",
+    "witness": "green",
+    "variants": [
+      "green"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Remind of the name of the largest country in the world.",
+    "witness": "russia",
+    "variants": [
+      "russia"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Specify the animal known for its long neck.",
+    "witness": "giraffe",
+    "variants": [
+      "giraffe",
+      "giraffes"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Specify the famous ship that sank in 1912 after hitting an iceberg.",
+    "witness": "titanic",
+    "variants": [
+      "titanic"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the animal with distinctive black and white stripes.",
+    "witness": "zebra",
+    "variants": [
+      "zebra",
+      "zebras"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the color of a common crow.",
+    "witness": "black",
+    "variants": [
+      "black"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the color of an eggplant.",
+    "witness": "purple",
+    "variants": [
+      "purple"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the drink that comes from cows.",
+    "witness": "milk",
+    "variants": [
+      "milk"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the empire ruled by Julius Caesar.",
+    "witness": "roman",
+    "variants": [
+      "roman"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the longest river in the world.",
+    "witness": "nile",
+    "variants": [
+      "nile"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the name of the home mountain of the Greek Gods.",
+    "witness": "olympus",
+    "variants": [
+      "olympus"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the name of the most common yellow fruit that monkeys also eat.",
+    "witness": "banana",
+    "variants": [
+      "banana",
+      "bananas"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State the name of the river that runs through London.",
+    "witness": "thames",
+    "variants": [
+      "thames"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "State what meal comes second in the day, after breakfast.",
+    "witness": "lunch",
+    "variants": [
+      "lunch"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Tell me how many minutes are in a hour.",
+    "witness": "60",
+    "variants": [
+      "60"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Tell me what a book is primarily made of.",
+    "witness": "paper",
+    "variants": [
+      "paper"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Tell me what a group of crows is called",
+    "witness": "murder",
+    "variants": [
+      "murder"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Tell me what the fastest land animal in the world is.",
+    "witness": "cheetah",
+    "variants": [
+      "cheetah",
+      "cheetahs"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  },
+  {
+    "question": "Tell me what tool you use to clean your teeth.",
+    "witness": "toothbrush",
+    "variants": [
+      "toothbrush",
+      "toothbrushes"
+    ],
+    "system_scope": "no explicit persistence across subsequent turns",
+    "source_issue": null
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "dataset": "chatqa_multirole_v1",
+  "training_recipe": "chatqa_multirole_fullseq_2048_v1",
+  "source_repo": "nvidia/ChatQA-Training-Data",
+  "source_config": "synthetic_convqa",
+  "source_split": "train",
+  "source_revision": "164f018cf5e7862ae5ef9c2b8ada47b07e3e3a31",
+  "source_sha256": "5ae871d66f231a2130507ac512cb8d4f03b796215d78056f5a6e009442e3082d",
+  "source_url": "https://huggingface.co/datasets/nvidia/ChatQA-Training-Data/blob/164f018cf5e7862ae5ef9c2b8ada47b07e3e3a31/synthetic_convqa/train.json",
+  "license_note": "Non-commercial use only, subject to linked OpenAI Terms of Use; see SOURCE_CARD.md",
+  "tokenizer_id": "Qwen/Qwen2.5-7B-Instruct",
+  "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "max_length": 2048,
+  "truncation": false,
+  "source_strings_rewritten": false,
+  "system_text": "Below is an instruction that describes a task, paired with an input that provides further context.\nWrite a response that appropriately completes the request.\n\nInstruction:\n",
+  "system_text_sha256": "ec3e4f10d00ed607d53158b92c3a098b542be9d3bb8b6a964152fe7843ec8af0",
+  "role_policy": "application preface/framing=SYSTEM; document=DATA; each user=USER; assistant history/answer=ASSISTANT",
+  "renderer_source_sha256": "3276430314c3bf54bcab1d99e9c747cc0ced4ac3851be104cdbcc2612a65dd2b",
+  "conversation_source_sha256": "6edcf8f948d663e7341bd82474b4f4b82bca96929a2c352d469e24a3d3be5c87",
+  "split_seed": 42,
+  "split_policy": "10% connected groups by exact normalized document OR first question, before filtering",
+  "split_stats": {
+    "train": {
+      "rows": 32046,
+      "groups": 7840,
+      "multi_turn_rows": 24934,
+      "canonical_unanswerable_rows": 1057,
+      "tokens": 45716651
+    },
+    "validation": {
+      "rows": 3552,
+      "groups": 871,
+      "multi_turn_rows": 2763,
+      "canonical_unanswerable_rows": 100,
+      "tokens": 5017898
+    }
+  },
+  "stored_evaluation_files": [
+    {
+      "path": "ha-aside-paper/data/prepared/bipia_code_2024.jsonl",
+      "sha256": "374269f34d7dd805eecbf54581a72d9bda6ff466730efdbba22cd31801e8d7ab"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/bipia_code_2025.jsonl",
+      "sha256": "91a7e1eddc63645c4ce7593e9f4dc98ed11f5a141475e72eb103cffa99e85b79"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/bipia_code_2026.jsonl",
+      "sha256": "b130009b053fc871720831cbd37125f357c4df6cbbb6fae5ef32c87828fc7a12"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/bipia_text_2024.jsonl",
+      "sha256": "3e9208476f255dfd6f6782881b0e46181c5b575f28e93c7d36cb73bb28db9939"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/bipia_text_2025.jsonl",
+      "sha256": "912b212642bbfe66ffd8cc0972ffa6bb6f9093ad5129f5448a79cb5db7727daf"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/bipia_text_2026.jsonl",
+      "sha256": "31cc0deba8774c776eb1770f441965abc182f7c78ec1edb63a3c518b7d1e0cef"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/gandalf.jsonl",
+      "sha256": "b6bf03f1d45499af2a3fd6af74dede03cf24b4f7432757a9537d7d457ff69e45"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/purple.jsonl",
+      "sha256": "87c2b9f0110e290c3177a5e7bcae3826ee7e1b0e7c23f97fa7a46e6323aeb41d"
+    },
+    {
+      "path": "ha-aside-paper/data/prepared/tensortrust.jsonl",
+      "sha256": "558b0b80903eed7c0755e19457756f3f020fe793494d8a72a8a4333faeb62963"
+    },
+    {
+      "path": "aside-original/experiments/data/SEP_dataset.json",
+      "sha256": "9f81a52ba089073251793f8499fbb79bb4112e94cf48d31b7f8805e8b44fa3ce"
+    },
+    {
+      "path": "aside-original/experiments/data/SEP_evaluation_feb25.json",
+      "sha256": "51af2fbf6ff3b7ad8936e8286b2b8d428bade1a230a57e8bd55770978083c13f"
+    },
+    {
+      "path": "aside-original/experiments/data/SEP_validation_feb25.json",
+      "sha256": "ad98e682cea9f0e4cd1a02701aa2662d487fc5c1d913d7951226038c09a05d76"
+    },
+    {
+      "path": "aside-original/experiments/data/tatsu-lab/alpaca_farm/eval.json",
+      "sha256": "09725fedcc9e63e2839cd56daa979d2b85c4fda33fede9a5163489d09795512a"
+    }
+  ],
+  "contamination_scope": "exact normalized source-field matches >=40 chars only; no semantic/near-duplicate guarantee",
+  "quality_scope": "212-row agent evidence screening plus structural/meta checks; not full-corpus semantic certification",
+  "files": {
+    "train.jsonl": {
+      "sha256": "5a500c6368109ee4bc43f64e92e684e8f791ea5c091e7447607d0e547ed5abc0",
+      "bytes": 216788178
+    },
+    "validation.jsonl": {
+      "sha256": "7dd14302a3d608684e75331710ce47beb8682f0e701ea580b004bf7f7d338a65",
+      "bytes": 23824842
+    },
+    "SOURCE_CARD.md": {
+      "sha256": "62331559e787d292b7a52b02ce0aa09b3b0370f70a13b893a858337ccf2ff0a8",
+      "bytes": 10784
+    },
+    "semantic_screening.json": {
+      "sha256": "c822c3dc8ca60fa9854119ca71033123411106fbfea87ee79af4eaea0e137247",
+      "bytes": 224410
+    },
+    "filter_report.json": {
+      "sha256": "16933cc8c7ab882cab3cd050d6a55c0c6ad2d4978aed769a927bc3cb1b74f961",
+      "bytes": 4507
+    }
+  },
+  "preparer_source_sha256": "c1ed2771d3e579f604ffa2a452347ccfec5d6cc58b75e348d4ea322ab0c90d61"
+}

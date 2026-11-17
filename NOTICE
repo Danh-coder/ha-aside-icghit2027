@@ -1,0 +1,12 @@
+HA-ASIDE: Role-Conditioned Embedding Rotation for Instruction–Data Separation
+Phan Cong Danh and Wooguil Pak, Yeungnam University.
+
+This repository implements an extension of ASIDE and uses its published models.
+ASIDE: https://github.com/egozverev/aside
+Pinned upstream revision: dfa94270d48b006decdcd4d455df3e10d6004880
+ASIDE is distributed under the Apache License, Version 2.0.
+
+The code license does not replace the terms of datasets, model weights, fonts,
+or IEEE template files. See DATA_AND_MODEL_SOURCES.md. Dataset source texts are
+downloaded separately. The recorded generated outputs are research artifacts;
+their inclusion does not relicense any third-party material they may reproduce.

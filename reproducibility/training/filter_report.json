@@ -1,0 +1,248 @@
+{
+  "raw_rows": 38689,
+  "excluded_rows_by_first_reason": {
+    "complete_sequence_over_2048": 2677,
+    "quality_or_overlap_group": 306,
+    "exact_duplicate": 108
+  },
+  "quality_trigger_rows": {
+    "1960": [
+      "generation_metadata"
+    ],
+    "4584": [
+      "generation_metadata"
+    ],
+    "6228": [
+      "generation_metadata"
+    ],
+    "10366": [
+      "generation_metadata"
+    ],
+    "12203": [
+      "generation_metadata"
+    ],
+    "15291": [
+      "generation_metadata"
+    ],
+    "15950": [
+      "generation_metadata"
+    ],
+    "17246": [
+      "generation_metadata"
+    ],
+    "19464": [
+      "generation_metadata"
+    ],
+    "19481": [
+      "generation_metadata"
+    ],
+    "25599": [
+      "generation_metadata"
+    ],
+    "26801": [
+      "generation_metadata"
+    ],
+    "27633": [
+      "generation_metadata"
+    ],
+    "32091": [
+      "generation_metadata"
+    ],
+    "37660": [
+      "generation_metadata"
+    ],
+    "6170": [
+      "review:false_unanswerable"
+    ],
+    "16139": [
+      "review:ambiguous_unanswerable"
+    ],
+    "17644": [
+      "review:false_unanswerable"
+    ],
+    "5819": [
+      "review:ambiguous_unanswerable"
+    ],
+    "37251": [
+      "review:history_entity_mismatch"
+    ],
+    "18577": [
+      "review:question_target_mismatch"
+    ],
+    "7505": [
+      "review:false_unanswerable"
+    ],
+    "13184": [
+      "review:ambiguous_unanswerable"
+    ],
+    "4653": [
+      "review:history_task_mismatch"
+    ],
+    "4738": [
+      "review:ambiguous_product_attribution"
+    ],
+    "7419": [
+      "review:unsupported_extension"
+    ],
+    "22325": [
+      "review:unsupported_extension"
+    ],
+    "16733": [
+      "review:ambiguous_unanswerable"
+    ],
+    "38560": [
+      "review:false_unanswerable"
+    ],
+    "10589": [
+      "review:ambiguous_unanswerable"
+    ],
+    "12572": [
+      "review:ambiguous_unanswerable"
+    ],
+    "16180": [
+      "review:false_unanswerable"
+    ],
+    "16070": [
+      "review:history_contradiction"
+    ],
+    "28200": [
+      "review:false_unanswerable"
+    ],
+    "32097": [
+      "review:false_unanswerable"
+    ],
+    "24978": [
+      "review:false_unanswerable"
+    ],
+    "33072": [
+      "review:false_unanswerable"
+    ],
+    "25130": [
+      "review:ambiguous_unanswerable"
+    ],
+    "14163": [
+      "review:false_unanswerable"
+    ],
+    "9424": [
+      "review:ambiguous_unanswerable"
+    ],
+    "33341": [
+      "review:ambiguous_unanswerable"
+    ],
+    "13171": [
+      "review:false_unanswerable"
+    ],
+    "10959": [
+      "review:false_unanswerable"
+    ],
+    "30415": [
+      "review:unsupported_normality_claim"
+    ],
+    "34344": [
+      "review:false_unanswerable"
+    ],
+    "34631": [
+      "review:document_target_mismatch"
+    ],
+    "38196": [
+      "review:false_unanswerable"
+    ],
+    "32980": [
+      "review:false_unanswerable"
+    ],
+    "2045": [
+      "review:false_unanswerable"
+    ],
+    "379": [
+      "review:false_unanswerable"
+    ],
+    "1586": [
+      "review:ambiguous_unanswerable"
+    ],
+    "2689": [
+      "review:false_unanswerable"
+    ],
+    "36964": [
+      "review:false_unanswerable"
+    ],
+    "8644": [
+      "review:false_unanswerable"
+    ],
+    "37610": [
+      "review:ambiguous_unanswerable"
+    ],
+    "17718": [
+      "review:false_unanswerable"
+    ],
+    "27429": [
+      "review:ambiguous_unanswerable"
+    ]
+  },
+  "excluded_groups": [
+    114,
+    190,
+    227,
+    379,
+    812,
+    854,
+    866,
+    1100,
+    1176,
+    1454,
+    1533,
+    1586,
+    1960,
+    2621,
+    2689,
+    2768,
+    2936,
+    2948,
+    3065,
+    3098,
+    3300,
+    3782,
+    4352,
+    4471,
+    4529,
+    4653,
+    5207,
+    5617,
+    5778,
+    6167,
+    6250,
+    7057,
+    7789,
+    7996,
+    8644,
+    8765,
+    9727,
+    10013,
+    10021,
+    10366,
+    10405,
+    10755,
+    11611,
+    11913,
+    11983,
+    13710,
+    15210,
+    15291,
+    38560
+  ],
+  "split_stats": {
+    "train": {
+      "rows": 32046,
+      "groups": 7840,
+      "multi_turn_rows": 24934,
+      "canonical_unanswerable_rows": 1057,
+      "tokens": 45716651
+    },
+    "validation": {
+      "rows": 3552,
+      "groups": 871,
+      "multi_turn_rows": 2763,
+      "canonical_unanswerable_rows": 100,
+      "tokens": 5017898
+    }
+  }
+}

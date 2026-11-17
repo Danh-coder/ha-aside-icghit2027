@@ -1,0 +1,15 @@
+# Application dependency pins for the release. Install PyTorch separately.
+transformers==5.17.0
+accelerate==1.15.0
+tokenizers==0.23.2
+huggingface-hub==1.32.0
+safetensors==0.8.0
+numpy==2.2.6
+scikit-learn==1.7.2
+rouge-score==0.1.2
+langdetect==1.0.9
+nltk==3.10.4
+thefuzz==0.22.1
+jsonlines==4.0.0
+absl-py==2.5.1
+matplotlib==3.11.2

@@ -1,0 +1,2 @@
+-r runtime.txt
+deepspeed==0.18.2

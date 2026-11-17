@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "files_verified": 144,
+  "credential_scan": "passed",
+  "model_weights_or_restricted_input_datasets_committed": false,
+  "evaluation_cases_reconstructed": 1690,
+  "recorded_outputs_rescored": 8360,
+  "training_split_bytes_reconstructed": true,
+  "historical_tiny_model_training_smoke": "passed",
+  "full_7b_gpu_training_rerun": false,
+  "fresh_7b_gpu_inference_rerun": false,
+  "manuscript_pages": 6,
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.5.2",
+    "tokenizers": "0.23.2"
+  }
+}

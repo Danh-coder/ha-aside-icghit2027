@@ -1,0 +1,14 @@
+{
+  "verified_on": "2026-11-14",
+  "submission_url": "https://icghit.org/paper-submission/",
+  "template_url": "https://icghit.org/wp-content/uploads/2026/08/conference-latex-template.zip",
+  "template_zip_sha256": "516252d9ac6e974af3a1d9aa72f97ecc462b9a47556225019fb0adef69bba78a",
+  "IEEEtran_cls_sha256": "c972aca108fda004c3514d63658e02816da2e54d9a1451e870b9bd970e003f55",
+  "IEEEtran_bst_url": "https://mirrors.ctan.org/macros/latex/contrib/IEEEtran/bibtex/IEEEtran.bst",
+  "IEEEtran_bst_sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f",
+  "compiler_url": "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-pc-windows-msvc.zip",
+  "format": "IEEEtran conference, 10pt, letterpaper; regular paper at most 6 pages",
+  "rechecked_on": "2026-11-17",
+  "current_template_zip_sha256": "516252d9ac6e974af3a1d9aa72f97ecc462b9a47556225019fb0adef69bba78a",
+  "live_class_matches": true
+}

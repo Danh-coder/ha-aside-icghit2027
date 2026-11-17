@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the HA-ASIDE manuscript and the upstream ASIDE paper when using this research code."
+type: software
+title: "HA-ASIDE: Role-Conditioned Embedding Rotation for Instruction–Data Separation"
+authors:
+  - family-names: Phan
+    given-names: Cong Danh
+    affiliation: Yeungnam University
+  - family-names: Pak
+    given-names: Wooguil
+    affiliation: Yeungnam University
+repository-code: "https://github.com/Danh-coder/ha-aside-icghit2027"
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-11-17
