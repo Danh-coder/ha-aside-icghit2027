@@ -4,8 +4,8 @@
     "bytes": 74
   },
   ".github/workflows/reproduce.yml": {
-    "sha256": "26f69d389c8a15b5ad93c61f97bf9eee25654c8c65f1dbedc86e8cf7ca5048c0",
-    "bytes": 862
+    "sha256": "fc460f2b0027f1316b8b111c97533e749f6b87b6b39696e1c862629843c9f56f",
+    "bytes": 884
   },
   ".gitignore": {
     "sha256": "71a358304b1a5f04d9af6a949d52358820332f7bba28608b3c927b7b5bcf3055",
@@ -368,8 +368,8 @@
     "bytes": 981
   },
   "README.md": {
-    "sha256": "9bfbb9f9d6e717a2946540cc59c08810f5ae6a9e54c4c8cc349fc9574db7909f",
-    "bytes": 9821
+    "sha256": "e7c84e703f2f548a647b1e5b389f6bba5cc2642fe6382fd40f5dff77c9f8d45d",
+    "bytes": 10260
   },
   "reproducibility/assembly.json": {
     "sha256": "1931e3d9068cd851c775f5cf489833f21b9dddb82aa4c78e5c0af48d5db18ac9",
@@ -471,6 +471,10 @@
     "sha256": "679cbebcab08aac8cb6b375b9f11bee2c9a811eff0ab6b6bf122f4c3bad103ca",
     "bytes": 4759
   },
+  "reproducibility/pinned_environment_verification.json": {
+    "sha256": "3d8d82d9d9dc3a1c353de7e9fdeba5584e929f7cff72ff17820beef2a6106e1a",
+    "bytes": 566
+  },
   "reproducibility/recorded/frozen_responses.jsonl.gz": {
     "sha256": "9750b63f49bdb1eaaba6582d32bd212f4c276f88f0d47cbe982771ed55b8c22c",
     "bytes": 1364514
@@ -526,6 +530,10 @@
   "requirements/runtime.txt": {
     "sha256": "62560f045e97e73c65908a54574710cc801166e7ef6a5b240bf2aafe5f082dfb",
     "bytes": 327
+  },
+  "requirements/tested-cpu.txt": {
+    "sha256": "601fa94da6c6a782824ac6c798241f8e754c5259ebb7ca0cb5228da625ae8402",
+    "bytes": 1281
   },
   "requirements/training.txt": {
     "sha256": "1d8c92c75e34e5512fb9841dc6a1b2178f9b80a7708d13fb03f4147fc2adafda",

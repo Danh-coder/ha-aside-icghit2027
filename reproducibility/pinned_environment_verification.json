@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.5.1+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.2.6",
+    "tokenizers": "0.23.2",
+    "matplotlib": "3.11.2",
+    "accelerate": "1.15.0"
+  },
+  "fresh_virtual_environment": true,
+  "clean_checkout": true,
+  "dependency_consistency": "pip check passed",
+  "unit_tests_passed": 7,
+  "historical_tiny_model_training_smoke": "passed",
+  "recorded_output_token_ids_rescored": 8360,
+  "figures_regenerated": 3,
+  "full_7b_training_or_inference_rerun": false
+}

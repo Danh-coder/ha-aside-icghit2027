@@ -27,7 +27,7 @@ newly trained baseline as the exact published model.
 
 ## Setup
 
-Run commands from the repository root. Linux with Python 3.10/3.11 is the intended
+Run commands from the repository root. Linux with Python 3.11/3.12 is the intended
 GPU environment. CPU reanalysis also works on Windows.
 
 ```bash
@@ -53,6 +53,10 @@ See `reproducibility/environment.json`. Not every historical training dependency
 was recorded. Release dependency pins make setup explicit; they do not establish
 bitwise identity to an undocumented historical environment. The release's actual
 CPU checks are recorded separately in `reproducibility/release_verification.json`.
+A second clean-checkout run in a fresh Python 3.12 environment also passed with
+PyTorch 2.5.1+cpu and NumPy 2.2.6; see
+`reproducibility/pinned_environment_verification.json`. Its complete CPU
+dependency freeze is `requirements/tested-cpu.txt`.
 
 Read [source and model terms](DATA_AND_MODEL_SOURCES.md). Generated data, caches,
 weights, and experiment outputs are ignored by Git.
