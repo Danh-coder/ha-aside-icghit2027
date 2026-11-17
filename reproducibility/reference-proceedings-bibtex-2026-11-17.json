@@ -1,0 +1,27 @@
+[
+  {
+    "key": "zverev2026aside",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/7768-/bibtex",
+    "bibtex": "@inproceedings{ICLR2026_b77b5f1a,\n author = {Zverev, Egor and Kortukov, Evgenii and Panfilov, Alexander and Volkova, Alexandra and Tabesh, Soroush and Lapuschkin, Sebastian and Samek, Wojciech and Lampert, Christoph},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {112869--112898},\n title = {ASIDE: Architectural Separation of Instructions and Data in Language Models},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/b77b5f1a2878fedd4705bfeafd24ca35-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}\n"
+  },
+  {
+    "key": "wu2025ise",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/950-/bibtex",
+    "bibtex": "@inproceedings{ICLR2025_ea13534e,\n author = {Wu, Tong and Zhang, Shujian and Song, Kaiqiang and Xu, Silei and Zhao, Sanqiang and Agrawal, Ravi and Indurthi, Sathish Reddy and Xiang, Chong and Mittal, Prateek and Zhou, Wenxuan},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {93728--93758},\n title = {Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/ea13534ee239bb3977795b8cc855bacc-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n"
+  },
+  {
+    "key": "zverev2025sep",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/3430-/bibtex",
+    "bibtex": "@inproceedings{ICLR2025_a77eadda,\n author = {Zverev, Egor and Abdelnabi, Sahar and Tabesh, Soroush and Fritz, Mario and Lampert, Christoph},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {67147--67179},\n title = {Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/a77eadda332b6d4a9ae1e0e4024555f2-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n"
+  },
+  {
+    "key": "liu2024chatqa",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/24785-/bibtex",
+    "bibtex": "@inproceedings{NEURIPS2024_1c0d54eb,\n author = {Liu, Zihan and Ping, Wei and Roy, Rajarshi and Xu, Peng and Lee, Chankyu and Shoeybi, Mohammad and Catanzaro, Bryan},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-0493},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {15416--15459},\n publisher = {Curran Associates, Inc.},\n title = {ChatQA: Surpassing GPT-4 on Conversational QA and RAG},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/1c0d54ebd0a6e58c4eca7d591e374b9d-Paper-Conference.pdf},\n volume = {37},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "debenedetti2024agentdojo",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/23699-/bibtex",
+    "bibtex": "@inproceedings{NEURIPS2024_97091a51,\n author = {Debenedetti, Edoardo and Zhang, Jie and Balunovic, Mislav and Beurer-Kellner, Luca and Fischer, Marc and Tram\\`{e}r, Florian},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-2636},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {82895--82920},\n publisher = {Curran Associates, Inc.},\n title = {AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/97091a5177d8dc64b1da8bf3e1f6fb54-Paper-Datasets_and_Benchmarks_Track.pdf},\n volume = {37},\n year = {2024}\n}\n"
+  }
+]

@@ -14,6 +14,11 @@ manuscript in [`paper/main.pdf`](paper/main.pdf). The paper evaluates a
 single-turn feasibility configuration. Multi-turn agent evaluation and utility
 optimization remain future work. Conference acceptance is not claimed.
 
+The manuscript links this repository from Reproducibility. Its 14 references
+use publication entries (2 journal articles and 12 conference papers), verified
+publisher pagination, and DOI identifiers where assigned. See
+[`paper/references_audit.json`](paper/references_audit.json) for the record.
+
 There are three reproducibility paths:
 
 1. **Reanalyze recorded experiments on CPU:** decode saved token IDs and recompute

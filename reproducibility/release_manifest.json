@@ -332,12 +332,12 @@
     "bytes": 288304
   },
   "paper/main.pdf": {
-    "sha256": "38fe13d8e71ab5a98d7bb113e988615e8e107c42764b09d9f3a14dacac3bb656",
-    "bytes": 212751
+    "sha256": "66ab6ba792ed76a20227a16f6aebf100ef7e5fd84d5a7a9ed1a50c16a57bf6fe",
+    "bytes": 211611
   },
   "paper/main.tex": {
-    "sha256": "3ff818adf0d8cdf1697959cb2189e9d69124b8ff3a7bb9660595b66d2e72cec6",
-    "bytes": 30666
+    "sha256": "ff48165866fc66b9ea2866cf8043764f379240ad869262db0db4916b86145ef9",
+    "bytes": 30781
   },
   "paper/make_benchmark_figure.py": {
     "sha256": "8254a7e7f6991257a94328702d339ec81235623aa0626eda0641fff1025a0064",
@@ -355,9 +355,17 @@
     "sha256": "98c26190b2ea63572058911c52a8e4ba4fe8e9693e665aafdf9a9fab2155e0fa",
     "bytes": 2558
   },
+  "paper/REFERENCE_FORMAT_REVISION_VI_2026-11-17.md": {
+    "sha256": "476436bedbe0dcc96d9dbf347e1c6dd742bd167b5069d28d57307ae551db6ac3",
+    "bytes": 2064
+  },
   "paper/references.bib": {
-    "sha256": "33b35d417a6e54674c658f99610b3f9cad1e01ecd5e602d0e689dc6db35982ad",
-    "bytes": 7302
+    "sha256": "e32374690a1e11dc83c75a2463fefe10d08319839bbefe1edd8658bd1a995953",
+    "bytes": 7874
+  },
+  "paper/references_audit.json": {
+    "sha256": "ba946d2a855547cc0b018ee641c3a2c6eab285607f9b2bb695c384d05d010381",
+    "bytes": 10097
   },
   "paper/tables/role_results.tex": {
     "sha256": "756a7217c11a68e6311f4afd2a99f75b518fcabefb47cdc13de497fa27408be6",
@@ -372,8 +380,8 @@
     "bytes": 981
   },
   "README.md": {
-    "sha256": "2caaf9deae0d426a381b8587762832494c25cf51a75e2aee78b2c958b56274c3",
-    "bytes": 10453
+    "sha256": "e996bb2ee015e8de967587c1dbec32f72bfc8acb4063ad2f50494087a36d09c4",
+    "bytes": 10755
   },
   "reproducibility/assembly.json": {
     "sha256": "1931e3d9068cd851c775f5cf489833f21b9dddb82aa4c78e5c0af48d5db18ac9",
@@ -502,6 +510,14 @@
   "reproducibility/recorded/utility_outputs.jsonl.gz": {
     "sha256": "b832bddea22c18f40e3f8f385dd8f425317898cb98143a2428000b73bdaf494d",
     "bytes": 423671
+  },
+  "reproducibility/reference-metadata-2026-11-17.json": {
+    "sha256": "d6a6bb0462f1cb352e0c4952c3ff6428fa0d3eae1f34261d089eb6accad66b2c",
+    "bytes": 35373
+  },
+  "reproducibility/reference-proceedings-bibtex-2026-11-17.json": {
+    "sha256": "16130f388612f2fbc30328ddd1c5b0a330b98220d11f5766ca4a2dbf55aa68cc",
+    "bytes": 3953
   },
   "reproducibility/selection.one-week.v2.json": {
     "sha256": "0930d77cabc267f5334a0c15863c95086ce5c0431619120ce9bab899f21108ee",

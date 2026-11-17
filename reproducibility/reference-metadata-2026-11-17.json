@@ -1,0 +1,1473 @@
+[
+  {
+    "DOI": "10.52202/079017-0493",
+    "type": "proceedings-article",
+    "title": [
+      "ChatQA: Surpassing GPT-4 on Conversational QA and RAG"
+    ],
+    "container-title": [
+      "Advances in Neural Information Processing Systems 37"
+    ],
+    "author": [
+      {
+        "given": "Zihan",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "Ping",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rajarshi",
+        "family": "Roy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peng",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chankyu",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad",
+        "family": "Shoeybi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bryan",
+        "family": "Catanzaro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "15416-15459",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "published-online": null,
+    "event": {
+      "name": "Advances in Neural Information Processing Systems 37",
+      "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+      "location": "Vancouver, BC, Canada",
+      "acronym": "NeurIPS 2024",
+      "number": "37",
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            10
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            15
+          ]
+        ]
+      }
+    },
+    "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+    "URL": "https://doi.org/10.52202/079017-0493"
+  },
+  {
+    "DOI": "10.52202/079017-2636",
+    "type": "proceedings-article",
+    "title": [
+      "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+    ],
+    "container-title": [
+      "Advances in Neural Information Processing Systems 37"
+    ],
+    "author": [
+      {
+        "given": "Edoardo",
+        "family": "Debenedetti",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jie",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mislav",
+        "family": "Balunovic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Luca",
+        "family": "Beurer-Kellner",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marc",
+        "family": "Fischer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Florian",
+        "family": "Tramèr",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "82895-82920",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "published-online": null,
+    "event": {
+      "name": "Advances in Neural Information Processing Systems 37",
+      "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+      "location": "Vancouver, BC, Canada",
+      "acronym": "NeurIPS 2024",
+      "number": "37",
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            10
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            15
+          ]
+        ]
+      }
+    },
+    "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+    "URL": "https://doi.org/10.52202/079017-2636"
+  },
+  {
+    "DOI": "10.1145/3716628",
+    "type": "journal-article",
+    "title": [
+      "AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways"
+    ],
+    "container-title": [
+      "ACM Computing Surveys"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0000-5469-0762",
+        "authenticated-orcid": false,
+        "given": "Zehang",
+        "family": "Deng",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Software Engineering, Swinburne University of Technology, Hawthorn, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-9279-3010",
+        "authenticated-orcid": false,
+        "given": "Yongjian",
+        "family": "Guo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-7253-8176",
+        "authenticated-orcid": false,
+        "given": "Changzhou",
+        "family": "Han",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Software Engineering, Swinburne University of Technology, Hawthorn, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6305-1740",
+        "authenticated-orcid": false,
+        "given": "Wanlun",
+        "family": "Ma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Science, Computing and Engineering Technologies, Swinburne University of Technology, Melbourne, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0008-2028-510X",
+        "authenticated-orcid": false,
+        "given": "Junwu",
+        "family": "Xiong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ant Group CO Ltd, Hangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0655-666X",
+        "authenticated-orcid": false,
+        "given": "Sheng",
+        "family": "Wen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Software Engineering, Swinburne University of Technology, Hawthorn, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5252-0831",
+        "authenticated-orcid": false,
+        "given": "Yang",
+        "family": "Xiang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Swinburne University of Technology, Hawthorn, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": "57",
+    "issue": "7",
+    "page": "1-36",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          21
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          21
+        ]
+      ]
+    },
+    "event": null,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "URL": "https://doi.org/10.1145/3716628"
+  },
+  {
+    "DOI": "10.1145/3711896.3736561",
+    "type": "proceedings-article",
+    "title": [
+      "A Survey on Trustworthy LLM Agents: Threats and Countermeasures"
+    ],
+    "container-title": [
+      "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0008-9585-7993",
+        "authenticated-orcid": false,
+        "given": "Miao",
+        "family": "Yu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Science and Technology of China, Hefei, Anhui, China and Squirrel Ai Learning, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-7404-6748",
+        "authenticated-orcid": false,
+        "given": "Fanci",
+        "family": "Meng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Science and Technology of China, Hefei, Anhui, China and Squirrel Ai Learning, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0005-5011-756X",
+        "authenticated-orcid": false,
+        "given": "Xinyun",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Zhejiang University, Hangzhou, Zhejiang, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-0734-6085",
+        "authenticated-orcid": false,
+        "given": "Shilong",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Science and Technology of China, Hefei, Anhui, China and Squirrel Ai Learning, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-3450-0885",
+        "authenticated-orcid": false,
+        "given": "Junyuan",
+        "family": "Mao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Science and Technology of China, Hefei, Anhui, China and Squirrel Ai Learning, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4784-9795",
+        "authenticated-orcid": false,
+        "given": "Linsey",
+        "family": "Pan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Salesforce, San Francisco, Illinois, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7774-8197",
+        "authenticated-orcid": false,
+        "given": "Tianlong",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Massachusetts Institute of Technology, Cambridge, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0602-169X",
+        "authenticated-orcid": false,
+        "given": "Kun",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nanyang Technological University, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9686-4369",
+        "authenticated-orcid": false,
+        "given": "Xinfeng",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nanyang Technological University, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2633-8555",
+        "authenticated-orcid": false,
+        "given": "Yongfeng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Rutgers University, New Brunswic, NJ, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7064-7438",
+        "authenticated-orcid": false,
+        "given": "Bo",
+        "family": "An",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nanyang Technological University, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4516-2524",
+        "authenticated-orcid": false,
+        "given": "Qingsong",
+        "family": "Wen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Squirrel AI Learning, Seattle, Washington, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "6216-6226",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          3
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          3
+        ]
+      ]
+    },
+    "event": {
+      "name": "KDD '25: The 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "location": "Toronto ON Canada",
+      "acronym": "KDD '25",
+      "sponsor": [
+        "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data",
+        "SIGMOD ACM Special Interest Group on Management of Data"
+      ]
+    },
+    "publisher": "ACM",
+    "URL": "https://doi.org/10.1145/3711896.3736561"
+  },
+  {
+    "DOI": "10.1145/3690624.3709179",
+    "type": "proceedings-article",
+    "title": [
+      "Benchmarking and Defending against Indirect Prompt Injection Attacks on Large Language Models"
+    ],
+    "container-title": [
+      "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0001-2786-6395",
+        "authenticated-orcid": false,
+        "given": "Jingwei",
+        "family": "Yi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Science and Technology of China, Heifei, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5169-3180",
+        "authenticated-orcid": false,
+        "given": "Yueqi",
+        "family": "Xie",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hong Kong University of Science and Technology, Hong Kong, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3571-7808",
+        "authenticated-orcid": false,
+        "given": "Bin",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Corporation, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5429-468X",
+        "authenticated-orcid": false,
+        "given": "Emre",
+        "family": "Kiciman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Corporation, Redmond, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0794-7681",
+        "authenticated-orcid": false,
+        "given": "Guangzhong",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8608-8482",
+        "authenticated-orcid": false,
+        "given": "Xing",
+        "family": "Xie",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Corporation, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9138-1272",
+        "authenticated-orcid": false,
+        "given": "Fangzhao",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Corporation, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "1809-1820",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          20
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          20
+        ]
+      ]
+    },
+    "event": {
+      "name": "KDD '25: The 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "location": "Toronto ON Canada",
+      "acronym": "KDD '25",
+      "sponsor": [
+        "SIGMOD ACM Special Interest Group on Management of Data",
+        "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+      ]
+    },
+    "publisher": "ACM",
+    "URL": "https://doi.org/10.1145/3690624.3709179"
+  },
+  {
+    "DOI": "10.1109/satml68715.2026.00040",
+    "type": "proceedings-article",
+    "title": [
+      "Defeating Prompt Injections by Design"
+    ],
+    "container-title": [
+      "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)"
+    ],
+    "author": [
+      {
+        "given": "Edoardo",
+        "family": "Debenedetti",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Google"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ilia",
+        "family": "Shumailov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google DeepMind"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tianqi",
+        "family": "Fan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jamie",
+        "family": "Hayes",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google DeepMind"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas",
+        "family": "Carlini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google DeepMind"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel",
+        "family": "Fabian",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christoph",
+        "family": "Kern",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chongyang",
+        "family": "Shi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google DeepMind"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andreas",
+        "family": "Terzis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google DeepMind"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Florian",
+        "family": "Tramèr",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "ETH Zurich"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "587-618",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "published-online": null,
+    "event": {
+      "name": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+      "location": "Munich, Germany",
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            23
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            25
+          ]
+        ]
+      }
+    },
+    "publisher": "IEEE",
+    "URL": "https://doi.org/10.1109/satml68715.2026.00040"
+  },
+  {
+    "DOI": "10.1162/tacl.a.19",
+    "type": "journal-article",
+    "title": [
+      "<scp>mt</scp>RAG: A Multi-Turn Conversational Benchmark for Evaluating\n                    Retrieval-Augmented Generation Systems"
+    ],
+    "container-title": [
+      "Transactions of the Association for Computational Linguistics"
+    ],
+    "author": [
+      {
+        "given": "Yannis",
+        "family": "Katsis",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. yannis.katsis@ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sara",
+        "family": "Rosenthal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. sjrosenthal@us.ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kshitij",
+        "family": "Fadnis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. kpfadnis@us.ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chulaka",
+        "family": "Gunasekara",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. chulaka.gunasekara@ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Young-Suk",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. ysuklee@us.ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lucian",
+        "family": "Popa",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. lpopa@us.ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vraj",
+        "family": "Shah",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. vraj@ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Huaiyu",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. huaiyu@us.ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Danish",
+        "family": "Contractor",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. Danish.Contractor@ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marina",
+        "family": "Danilevsky",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, USA. mdanile@us.ibm.com"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": "13",
+    "issue": null,
+    "page": "784-808",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          29
+        ]
+      ]
+    },
+    "event": null,
+    "publisher": "MIT Press",
+    "URL": "https://doi.org/10.1162/tacl.a.19"
+  },
+  {
+    "DOI": "10.18653/v1/2025.naacl-long.425",
+    "type": "proceedings-article",
+    "title": [
+      "IHEval: Evaluating Language Models on Following the Instruction Hierarchy"
+    ],
+    "container-title": [
+      "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)"
+    ],
+    "author": [
+      {
+        "given": "Zhihan",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shiyang",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zixuan",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xin",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Haoming",
+        "family": "Jiang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xianfeng",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yifan",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zheng",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Haodong",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhaoxuan",
+        "family": "Tan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yichuan",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qingyu",
+        "family": "Yin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bing",
+        "family": "Yin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Meng",
+        "family": "Jiang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "8374-8398",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "published-online": null,
+    "event": {
+      "name": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+      "location": "Albuquerque, New Mexico",
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            4
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2025,
+            4
+          ]
+        ]
+      }
+    },
+    "publisher": "Association for Computational Linguistics",
+    "URL": "https://doi.org/10.18653/v1/2025.naacl-long.425"
+  }
+]
